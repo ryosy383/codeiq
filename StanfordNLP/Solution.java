@@ -21,7 +21,7 @@ import edu.stanford.nlp.util.CoreMap;
 public class Solution {
 
 	protected StanfordCoreNLP pipeline;
-  //Propertiesの設定
+	//Propertiesの設定
 	public Solution() {
 		Properties props;
 		props = new Properties();
