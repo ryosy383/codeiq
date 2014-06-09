@@ -8,20 +8,20 @@ PlayerName="ryosy383"
 */
 
 var count = 0;
-function play(h) {
+function play(h)　{
 
   var last = h[1][h[1].length - 1];
   count++;
   
   //一定の確率でグーを出す(ランダムが使用できないので、数学関数を使用して出力を一意にする)
-  if ( parseInt( ( Math.PI * count * Math.sqrt(count) ) % 7 ) == 1 ) {
+  if ( ( parseInt( Math.PI * count * Math.sqrt(count) ) % 7 ) == 1 ) {
     return "G";
   }
   
   count++;
   
   // G:0, C:1, P:2
-  switch( parseInt( ( Math.PI * count * Math.sqrt(count) ) ) % 3 ) {
+  switch( parseInt( Math.PI * count * Math.sqrt(count) ) % 3 ) {
     case 0:
       if ( last == "P" ) {
         //新しい手が直前の手に負けたら再帰
