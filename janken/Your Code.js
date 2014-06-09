@@ -8,7 +8,7 @@ PlayerName="ryosy383"
 */
 
 var count = 0;
-function play(h)　{
+function play(h) {
 
   var last = h[1][h[1].length - 1];
   count++;
